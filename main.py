@@ -33,4 +33,20 @@ async def main():
 
 
 if __name__ == "__main__":
+    # url = "http://127.0.0.1:11434/v1/chat/completions"
+    # headers = {"Content-Type": "application/json"}
+    # data = {
+    #     "model": "deepseek-r1:latest",
+    #     "messages": [{"role": "user", "content": "hello"}]
+    # }
+    #
+    # try:
+    #     response = requests.post(url, headers=headers, data=json.dumps(data))
+    #     response.raise_for_status()  # 检查请求是否成功
+    #     print(response.json())  # 打印JSON格式的响应内容
+    # except requests.exceptions.RequestException as e:
+    #     print(f"请求出错: {e}")
+    # except ValueError:
+    #     print("响应内容不是有效的JSON格式")
     asyncio.run(main())
+

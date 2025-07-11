@@ -39,3 +39,13 @@ beautifulsoup4~=4.13.3
 
 huggingface-hub~=0.29.2
 setuptools~=75.8.0
+
+langchain-community~=0.3.27
+langchain-text-splitters~=0.3.8
+duckduckgo_search~=7.5.5
+pydantic_core~=2.27.2
+pandas~=2.3.1
+curlify~=3.0.0
+langchain~=0.3.26
+duckduckgo_search~=7.5.5
+pydantic_core~=2.27.2

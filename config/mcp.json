@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "mcp-server-demo": {
+      "type": "sse",
+      "url": "http://localhost:8000/sse",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/fangqianyu/PycharmProjects/mcp-server-demo",
+        "run",
+        "mcp_server.py"
+      ]
+    }
+  }
+}

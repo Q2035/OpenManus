@@ -15,3 +15,12 @@ base_url = "http://localhost:11434/v1"                             # API endpoin
 api_key = "ollama"                                                 # Your API key for vision model
 max_tokens = 4096                                                  # Maximum number of tokens in the response
 temperature = 0.0                                                  # Controls randomness for vision model
+
+
+
+[llm.vision]
+model = "bge-m3:latest"       # The vision model to use
+base_url = "http://127.0.0.1:11434/v1" # API endpoint URL for vision model
+api_key = "ollama"                   # Your API key for vision model
+max_tokens = 8192                          # Maximum number of tokens in the response
+temperature = 0.0
