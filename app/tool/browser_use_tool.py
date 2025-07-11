@@ -12,6 +12,7 @@ from pydantic_core.core_schema import ValidationInfo
 
 from app.config import config
 from app.llm import LLM
+from app.schema import Message
 from app.tool.base import BaseTool, ToolResult
 from app.tool.web_search import WebSearch
 
@@ -390,7 +391,9 @@ Extraction goal: {goal}
 Page content:
 {content[:max_content_length]}
 """
-                    messages = [{"role": "system", "content": prompt}]
+                    # messages = [{"role": "system", "content": prompt}]
+                    # gemini必须要user
+                    messages = [Message.user_message(content=prompt)]
 
                     # Define extraction function schema
                     extraction_function = {
